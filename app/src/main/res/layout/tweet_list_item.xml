@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivavatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/placeholder" />
+
+    <TextView
+        android:id="@+id/tvDisplayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        tools:text="Silvia"
+        app:layout_constraintStart_toEndOf="@+id/ivavatar"
+        app:layout_constraintTop_toTopOf="@+id/ivavatar" />
+
+    <TextView
+        android:id="@+id/tvHandle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        tools:text="@macha.silvia"
+        app:layout_constraintStart_toEndOf="@+id/tvDisplayName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTweet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/ivavatar"
+        app:layout_constraintTop_toBottomOf="@+id/tvDisplayName"
+        tools:text="For you to use recycle view you have to  create
+Use text view to add a name or anything to be included on the list
+Then create an adaptor
+
+" />
+
+    <ImageView
+        android:id="@+id/ivComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/ivavatar"
+        app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+        app:srcCompat="@drawable/baseline_comment_24" />
+
+    <TextView
+        android:id="@+id/tvReplyCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/ivComment"
+        app:layout_constraintTop_toTopOf="@+id/ivComment" />
+
+    <ImageView
+        android:id="@+id/ivRtCount"
+        android:layout_width="9dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="19dp"
+        app:layout_constraintStart_toEndOf="@+id/tvReplyCount"
+        app:layout_constraintTop_toTopOf="@+id/tvReplyCount"
+        app:srcCompat="@drawable/baseline_autorenew_24" />
+
+    <ImageView
+        android:id="@+id/ivLikes"
+        android:layout_width="19dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="33dp"
+        app:layout_constraintStart_toEndOf="@+id/ivRtCount"
+        app:layout_constraintTop_toTopOf="@+id/ivRtCount"
+        app:srcCompat="@drawable/baseline_favorite_24" />
+
+    <TextView
+        android:id="@+id/tvLikeCounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:text="91"
+        app:layout_constraintStart_toEndOf="@+id/ivLikes"
+        app:layout_constraintTop_toTopOf="@+id/ivLikes" />
+</androidx.constraintlayout.widget.ConstraintLayout>
